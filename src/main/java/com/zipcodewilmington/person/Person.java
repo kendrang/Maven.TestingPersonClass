@@ -6,30 +6,54 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private String eyeColor;
+    private int height;
+    private boolean isInSchool;
 
-    public Person() {
+    public Person(String name , int age, String eyeColor, int height, boolean isInSchool) {
+        this.name = name;
+        this.age = age;
+        this.eyeColor = eyeColor;
+        this.height = height;
+        this.isInSchool = isInSchool;
+    }
+
+    public Person (){
+        name = "";
+        age = Integer.MAX_VALUE;
+        eyeColor = "brown";
+        height = 5;
+        isInSchool = true;
     }
 
     public Person(int age) {
+        setAge(age);
+
     }
 
     public Person(String name) {
+        setName(name);
+
     }
 
     public Person(String name, int age) {
+        setAge(age);
+        setName(name);
     }
 
     public void setName(String name) {
+        this.name = name;
+
     }
 
     public void setAge(int age) {
+        this.age = age;
+
     }
 
-    public String getName() {
-        return null;
+    public String getName() { return name;
     }
 
-    public Integer getAge() {
-        return null;
+    public Integer getAge() { return age;
     }
 }
