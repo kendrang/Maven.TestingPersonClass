@@ -21,7 +21,7 @@ public class Person {
     public Person (){
         name = "";
         age = Integer.MAX_VALUE;
-        eyeColor = "brown";
+        eyeColor = "";
         height = 5;
         isInSchool = true;
     }
@@ -55,5 +55,29 @@ public class Person {
     }
 
     public Integer getAge() { return age;
+    }
+
+    public String getEyeColor() {
+        return eyeColor;
+    }
+
+    public void setEyeColor(String eyeColor) {
+        this.eyeColor = eyeColor;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public boolean isInSchool() {
+        return isInSchool;
+    }
+
+    public void setInSchool(boolean inSchool) {
+        isInSchool = inSchool;
     }
 }
